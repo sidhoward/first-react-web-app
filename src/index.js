@@ -4,9 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faShoppingCart  } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope  } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'; 
 
-library.add(faShoppingCart )
+library.add(faEnvelope, faInstagram )
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);

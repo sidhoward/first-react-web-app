@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -9,24 +10,24 @@ const Nav = () => {
       </h1>
       <ul className="nav__link--list">
         <li className="nav__link">
-          <a href="#" className="nav__link--anchor link__hover-effect">
+        <Link exact to= {"/"}  className="nav__link--anchor link__hover-effect">
             About
-          </a>
+          </Link>
         </li>
         <li className="nav__link">
-          <a href="#" className="nav__link--anchor link__hover-effect">
+          <Link to= {"./scheduelsession"} className="nav__link--anchor link__hover-effect">
             Schedual A Session
-          </a>
+          </Link>
         </li>
         <li className="nav__link">
-          <a href="#" className="nav__link--anchor link__hover-effect">
+        <Link to= {"./shop"} className="nav__link--anchor link__hover-effect">
             Shop
-          </a>
+          </Link>
         </li>
         <li className="nav__link">
-          <a href="#" className="nav__link--anchor link__hover-effect">
+        <Link to= {"https://www.instagram.com"} className="nav__link--anchor link__hover-effect">
             Instagram
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

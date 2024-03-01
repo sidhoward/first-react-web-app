@@ -1,6 +1,6 @@
 import React from "react";
-import LandingPage from "../landingPage/LandingPage";
-import Main from "../main/Main";
+import LandingPage from "../components/LandingPage";
+import Main from "../components/Main";
 
 const Home = ({ IFBBPro, mainRight, mainLeft }) => {
   return (

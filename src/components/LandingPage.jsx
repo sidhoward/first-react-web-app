@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Header from "../components/Header";
-import EmailButton from "../components/EmailButton";
+import Nav from "./Nav";
+import Header from "./Header";
+import EmailButton from "../ui/EmailButton";
 
 const LandingPage = ({ IFBBPro, mainRight, mainLeft }) => {
   return (

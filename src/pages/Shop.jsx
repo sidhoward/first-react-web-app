@@ -1,7 +1,8 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
-import Contact from "../components/Contact";
+import Contact from "../ui/Contact";
+import EmailButton from "../ui/EmailButton";
+import SocialList from "../ui/SocialList";
 
 const Shop = ({ mainRight, mainLeft} ) => {
   return (
@@ -10,6 +11,8 @@ const Shop = ({ mainRight, mainLeft} ) => {
         <Nav />
         Shop
         <Contact mainRight={mainRight} mainLeft={mainLeft}/>
+        <SocialList/>
+        <EmailButton />
       </div>
     </section>
   );

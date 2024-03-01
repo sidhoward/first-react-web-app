@@ -1,6 +1,6 @@
 import React from "react";
-import CoachingPlans from "../components/CoachingPlans";
-import Contact from "../components/Contact";
+import CoachingPlans from "./CoachingPlans";
+import Contact from "../ui/Contact";
 
 const Main = ({mainRight, mainLeft}) => {
   return (

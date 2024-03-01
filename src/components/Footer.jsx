@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,32 +15,16 @@ const Footer = () => {
             LOGO
           </h1>
           <div className="footer__social--list">
-            <a
-              href="#"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Schedual A Session
-            </a>
-            <a
-              href="#"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Shop
-            </a>
-            <a
-              href="#"
-              className="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Instagram
-            </a>
+              <Link exact to= {"/"} className="footer__social--link link__hover-effect link__hover-effect--white">
+              About </Link>
+              <Link to= {"./scheduelsession"} className="footer__social--link link__hover-effect link__hover-effect--white">
+              Schedual A Session </Link>
+              <Link to= {"./shop"} className="footer__social--link link__hover-effect link__hover-effect--white">
+              Shop </Link>
+              <Link to= {"https://www.instagram.com"} className="footer__social--link link__hover-effect link__hover-effect--white">
+              Instagram </Link>
           </div>
-          <div className="footer__copyright">Copyright &copy 2023</div>
+          <div className="footer__copyright">Copyright © 2023</div>
         </div>
       </div>
     </footer>
